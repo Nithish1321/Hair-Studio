@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap'); 
+*{
+    margin: auto;
+    color:white;
+    background-color: black;
+}
+.nihtish{
+      height: 440px;
+      margin-top: 20px;
+}
+.yuno{
+        text-align: center;
+        background-color: aqua;
+        
+}
+
+
+.first{
+    display: flex;
+}
+
+.first  ul{
+
+    display: flex;
+    margin-left: 400px;
+    
+}
+.first  ul li{
+    padding: 10px;
+    list-style: none;
+    font-size: 35px;
+    
+}
+.first  ul li a{
+    text-decoration: none;
+}
+.first{
+    background-color: green;
+    height: 70px;
+}
+

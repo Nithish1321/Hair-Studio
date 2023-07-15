@@ -1,0 +1,42 @@
+body{
+    background: linear-gradient(rgba(0.5,0,0,0.5),black);
+}
+.first h1{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 50px;
+    margin-left: 45%;
+    color: #fff;
+}
+.first img{
+    width: 500px;
+    margin-left: 500px;
+    color: #fff;
+}
+.first p{
+    font-size: 30px;
+    color: #fff;
+}
+.first ul li{
+    font-size: 30px;
+    color: #fff;
+}
+
+table{
+    margin-left: 300px;
+    width: 500px;
+    height: 300px;
+    border-collapse: collapse;
+   
+}
+th,td,tr{
+    border: 1px solid #fff;
+    color: #fff;
+    border-collapse: collapse;
+}
+caption{
+    color: #fff;
+    font-size: 25px;
+}
+td{
+    text-align: center;
+}

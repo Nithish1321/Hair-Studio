@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="login1.css">
+   
+        
+
+</head>
+<body>
+    <div class="main">
+        <div class="register"> 
+            <h2>Login</h2>
+            <form  id="myform"class="regi" method="post">
+            <label>Email : </label>
+            <br>
+            <input type="email" name="email"
+            id="email" placeholder="" class="name">
+            <br><br>
+            
+            <label>Passsword :</label>
+            <br>
+            <input type="password" name="pwd"
+            id="password" class="name">
+            <br><br>
+            
+            <button onclick="return validateform()" formaction="http://localhost:3000/login">Submit</button>
+            <br><br>
+             <p id="para">Not have an account? <a href="login.html" id="para1">Signup here</a>
+             </p>
+            </form>
+           
+
+
+        </div>
+    </div>
+    <script defer src="login1.js"></script>
+</body>
+</html>

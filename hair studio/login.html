@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="login.css">
+    
+</head>
+<body>
+    <div class="main">
+        <div class="register"> 
+            <h2>Register here</h2>
+            <form id="register" method="post" >
+            <label>First Name:</label>    
+            <br>
+            <input type="text" name="fname"
+            id="name" placeholder="First Name" class="name">
+            <br><br>
+            <label>Last Name: </label>
+            <br>
+            <input type="text" name="lname"
+            id="lname" placeholder="Last Name" class="name">
+            <br><br>
+            
+            <label>Email : </label>
+            <br>
+            <input type="email" name="email"
+            id="email" placeholder="Email" class="name">
+            <br><br>
+            <label>DOB :</label>
+            <br><input type="date" name="date"
+            id="date" placeholder="" class="name">
+            <br><br>
+            <label> Set password :</label>
+            <br>
+            <input type="password" name="pwd"
+            id="password" class="name">
+            <br><br>
+            <label>Confirm Passsword :</label>
+            <br>
+            <input type="password" name="pwd1"
+            id="password1" class="name">
+            <br><br>
+            <label>Gender : </label>
+            <br>
+            &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="gender"
+            id="male" required>
+            &nbsp;
+            <span id="flog">Male</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="gender"
+            id="female">
+            &nbsp;
+            <span id="flog">Female</span>
+            <br><br>
+            <button onclick="return validateform()" formaction="http://localhost:3000/save">Submit</button>
+             
+            </form>
+            
+
+        </div>
+    </div>
+    <script defer src="login.js"></script>
+</body>
+</html>

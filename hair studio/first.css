@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+#banner{
+    background-image: linear-gradient(rgba(0,0,0,0.5),black),url(banner.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+
+}
+.hi{
+    padding-left: 4px;
+}
+.yuno{
+    text-align: center;
+    color: #fff;
+    padding-top: 180px;   
+}
+.yuno h1{
+    font-size: 130px;  
+    font-family: 'Kaushan Script', cursive;
+
+}
+.yuno p{
+    font-size: 20px;
+    font-style: italic;
+}
+.asta{
+    margin: 70px auto 0;
+}
+.asta a{
+    width: 150px;
+    text-decoration: none;
+    display:inline-block;
+    margin-left:350px;
+    padding: 12px 0;
+    color: #fff;
+    border: .5px solid #fff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.asta a span {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+.asta a:hover span {
+    width: 100%;
+
+}
+.asta a:hover{
+    color: black;
+}
+#sidenav{
+    width: 250px;
+    height: 100vh;
+    right: -250px;
+    top: 0; 
+    position: fixed;
+    background: black;
+    z-index: 2;    
+    transition: 0.5s;
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+#menu{
+    width: 50px;
+    height: 50px;
+    background: black;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#menu img{
+    width: 30px;
+    margin-top: 10px;
+}
+#feature{
+    width: 100%;
+    padding: 70px 0;
+}
+.featitle{
+    text-align: center;
+    padding: 70px;
+}
+@media screen and (max-width: 770px){
+    .yuno h1{
+        font-size: 44px;
+    }
+    .asta a{
+        display: block;
+        margin: 20px auto;
+    }
+}
+.featitle p{
+    margin: auto;
+    font-size: 35px;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.featbox{
+    width: 80%;
+    margin: auto;
+    display: grid ;
+    grid-template-columns: 50% 30%;
+    column-gap: 80px;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+.features{
+       flex-basis: 50%;
+       
+      
+}
+.featuresimg{
+    flex-basis: 50%;
+    margin: auto;
+} 
+.featuresim img{
+    width: 40% ;
+    border-radius: 10px;
+}
+
+
+.features h1{
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight:100;
+    color: black;
+}
+.desc{
+    display: flex;
+    align-items:center ;
+    margin-bottom: 40px;
+
+}
+.icon .fa{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    color:black;
+    border: 1px solid black;
+}
+.feattext p{
+    padding: 0 20px;
+    text-align: initial; 
+} 
+ul li ul.drop{
+    display: none;
+ 
+}
+ul li a:hover {
+    background: transparent;
+
+}
+
+ul li:hover ul.drop {
+    display: block;
+}
+/*service*/
+#service{
+    width: 100%;
+    padding: 70px 0;
+    background: #efefef;
+}
+.title{
+    text-align: center;
+    padding: 70px;
+}
+.title h1{
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight:100;
+    color: black;
+    margin-left:45%;
+}
+.title p{
+    margin: auto;
+    font-size: 35px;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    font-family: 'Kaushan Script', cursive;
+}
+.servicebox{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.sinservice{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+}
+.sinservice img{
+    width: 100%;  
+    border-radius: 7px;
+}
+.over{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0   ;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5),black);
+    opacity: 0;
+    transition: 1s;
+} 
+.sinservice:hover .over{
+    opacity: 1 ;
+
+}
+.hairstyle{
+    width: 80%;
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 1s;
+    display: none;
+
+}
+hr{
+    background: #fff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+
+}
+.hairstyle p{
+     font-size: 14px;
+     
+}
+.sinservice:hover .hairstyle{
+    bottom: 40%;
+    opacity: 1 ;
+    display: block;
+    transition: .4s;
+    
+    
+}
+#footer{
+    padding: 100px 0 20px;
+    background: black;
+}
+.tit{
+    text-align: center;
+    padding: 70px;
+}
+.tit h1{
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight:100;
+    color: white;
+    margin-left:45%;
+}
+.tit p{
+    margin: auto;
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    font-family: 'Kaushan Script', cursive;
+}
+.row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #fff;
+}
+.left,.right{
+     flex-basis: 45%;
+     padding: 10px;
+     margin-bottom: 20px;
+}
+.right{
+    text-align: right;
+
+}
+.row h1{
+    margin: 10px 0;
+}
+.row p{
+    line-height: 35px;
+}
+.social-links{
+    text-align: center;
+
+}
+.social-links a{
+    text-decoration: none;
+    color: red;
+}
+.social-links .fa{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid white;
+    margin: 40px 5px 0;
+    color: white;
+    cursor: pointer;
+    transition: .5s; 
+
+}
+.social-links .fa:hover{
+    background: white;
+    color:black;
+    transform: translateY(-7px);
+}
+.social-links p{
+    font-size: 12px;
+    margin-top: 20px;
+
+}
+
